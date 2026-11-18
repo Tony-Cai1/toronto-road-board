@@ -1,5 +1,5 @@
-{% macro restriction_badge() -%}
-  <span class="badge">Road closed</span>
+{% macro restriction_badge(label) -%}
+  <span class="badge">{{ label }}</span>
 {%- endmacro %}
 <!doctype html>
 <html lang="en">
@@ -36,7 +36,7 @@
                 <p class="street-type">{{ restriction.ISSUE_TYPE }} restriction</p>
                 <h2>{{ restriction.MAIN_ROAD }}</h2>
               </div>
-              {{ restriction_badge() }}
+              {{ restriction_badge(restriction.badge) }}
             </div>
 
             <p class="location">{{ restriction.location }}</p>
