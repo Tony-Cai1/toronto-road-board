@@ -1,0 +1,80 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "geometryType": "esriGeometryPolyline",
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "features": [
+    {
+      "attributes": {
+        "CLOSURE_ID": "8920632",
+        "GEOMETRY_TYPE": "LineString",
+        "SOURCE": null,
+        "PRIORITY": "High",
+        "LOCATION_TYPE": "Issue Location",
+        "ROAD_CLOSURE_TYPE": null,
+        "LANES_AFFECTED": "\"{\\\"LocationDescription\\\":\\\"Avenue Rd from Clarendon Ave to Balmoral Ave\\\",\\\"EncodedCoordinates\\\":\\\"k|riG`zrcNUF??{C~@\\\",\\\"LaneApproaches\\\":[{\\\"Direction\\\":3,\\\"RoadName\\\":\\\"Avenue Rd\\\",\\\"FeatureId\\\":1139844,\\\"RoadId\\\":2924,\\\"LanesAffectedPattern\\\":\\\"LOLOWO\\\",\\\"LaneBlockLevel\\\":2,\\\"RoadClosureType\\\":20},{\\\"Direction\\\":2,\\\"RoadName\\\":\\\"Avenue Rd\\\",\\\"FeatureId\\\":1139844,\\\"RoadId\\\":2924,\\\"LanesAffectedPattern\\\":\\\"LOLCWO\\\",\\\"LaneBlockLevel\\\":2,\\\"RoadClosureType\\\":20}],\\\"LocationBlockLevel\\\":3,\\\"RoadClosureType\\\":0}\"",
+        "AFFECTED_DIRECTION": "ONE_DIRECTION",
+        "MAIN_ROAD": "Avenue Rd",
+        "FROM_ROAD": "Clarendon Ave",
+        "FROM_ROAD_LATITUDE": "43.683416",
+        "FROM_ROAD_LONGITUDE": "-79.400169",
+        "TO_ROAD": "Balmoral Ave",
+        "TO_ROAD_LATITUDE": "43.684310",
+        "TO_ROAD_LONGITUDE": "-79.400530",
+        "ISSUE_TYPE": "Planned",
+        "DESCRIPTION": "Northbound curb lane blocked due to construction",
+        "PLAN_START_LOCAL": "2024-06-10 13:16:00",
+        "PLAN_END_LOCAL": "2026-12-31 23:59:00",
+        "OBJECTID": 2088,
+        "STATUS": "UPDATED",
+        "LAST_MODIFIED_DATE": 1718039934000,
+        "START_DATE": 1718039760000,
+        "Shape__Length": 0,
+        "AT_ROAD": null,
+        "CLOSURE_LOCATION": "Avenue Rd from Clarendon Ave to Balmoral Ave",
+        "WORK_PERIOD": "Continuous",
+        "CONTRACTOR": "Amico Affiliates",
+        "WORK_EVENT_TYPE": null,
+        "END_DATE": 1798779540000,
+        "ONSITE_HOURS": "01:16pm to 11:59pm Continuous"
+      }
+    },
+    {
+      "attributes": {
+        "CLOSURE_ID": "7682680-2",
+        "GEOMETRY_TYPE": "LineString",
+        "SOURCE": null,
+        "PRIORITY": "High",
+        "LOCATION_TYPE": "Issue Location",
+        "ROAD_CLOSURE_TYPE": null,
+        "LANES_AFFECTED": "\"{\\\"LocationBlockLevel\\\":8,\\\"LaneApproaches\\\":[{\\\"RoadName\\\":\\\"Queen St W\\\",\\\"LaneBlockLevel\\\":2,\\\"Direction\\\":4,\\\"LanesAffectedPattern\\\":\\\"\\\"},{\\\"RoadName\\\":\\\"Queen St W\\\",\\\"LaneBlockLevel\\\":2,\\\"Direction\\\":5,\\\"LanesAffectedPattern\\\":\\\"\\\"}]}\"",
+        "AFFECTED_DIRECTION": "ONE_DIRECTION",
+        "MAIN_ROAD": "Queen St E",
+        "FROM_ROAD": "Yonge St",
+        "FROM_ROAD_LATITUDE": "43.652440",
+        "FROM_ROAD_LONGITUDE": "-79.379259",
+        "TO_ROAD": "Victoria St",
+        "TO_ROAD_LATITUDE": "43.652682",
+        "TO_ROAD_LONGITUDE": "-79.378092",
+        "ISSUE_TYPE": "Planned",
+        "DESCRIPTION": "Full closure to vehicles for the Ontario Line subway construction. Pedestrian access is maintained. ",
+        "PLAN_START_LOCAL": "2024-02-28 00:01:00",
+        "PLAN_END_LOCAL": "2027-11-30 00:00:00",
+        "OBJECTID": 2099,
+        "STATUS": "UPDATED",
+        "LAST_MODIFIED_DATE": 1709210920000,
+        "START_DATE": 1709096460000,
+        "Shape__Length": 0,
+        "AT_ROAD": null,
+        "CLOSURE_LOCATION": "Queen St W at Bay St, to Queen St E, to Victoria St",
+        "WORK_PERIOD": "Continuous",
+        "CONTRACTOR": null,
+        "WORK_EVENT_TYPE": null,
+        "END_DATE": 1827550800000,
+        "ONSITE_HOURS": "12:01am to 12:00am Continuous"
+      }
+    }
+  ]
+}

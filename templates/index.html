@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small board of saved Toronto road restrictions.">
+    <title>Toronto Road Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Toronto Road Board home">
+          <span class="brand-mark" aria-hidden="true">TR</span>
+          <span>Toronto Road Board</span>
+        </a>
+        <p class="snapshot">Saved data snapshot · Nov 18, 2026</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Traffic advisory</p>
+        <h1 id="page-title">Road restrictions</h1>
+        <p class="lede">Two selected restrictions from the City of Toronto public feed.</p>
+      </section>
+
+      <section class="restriction-list" aria-label="Saved road restrictions">
+        {% for restriction in restrictions %}
+          <article class="restriction-card" data-object-id="{{ restriction.OBJECTID }}">
+            <div class="card-heading">
+              <div>
+                <p class="street-type">{{ restriction.ISSUE_TYPE }} restriction</p>
+                <h2>{{ restriction.MAIN_ROAD }}</h2>
+              </div>
+              <span class="badge">Road closed</span>
+            </div>
+
+            <p class="location">{{ restriction.location }}</p>
+
+            <dl class="dates">
+              <div>
+                <dt>Starts</dt>
+                <dd>
+                  <time datetime="{{ restriction.PLAN_START_LOCAL }}">{{ restriction.display_start }}</time>
+                </dd>
+              </div>
+              <div>
+                <dt>Ends</dt>
+                <dd>
+                  <time datetime="{{ restriction.PLAN_END_LOCAL }}">{{ restriction.display_end }}</time>
+                </dd>
+              </div>
+            </dl>
+
+            <p class="description">{{ restriction.DESCRIPTION }}</p>
+          </article>
+        {% endfor %}
+      </section>
+    </main>
+
+    <footer>
+      <p>Saved City of Toronto public data · This V1 does not refresh automatically.</p>
+    </footer>
+  </body>
+</html>
