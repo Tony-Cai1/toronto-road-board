@@ -50,7 +50,7 @@ jobs:
         run: |
           python -m pip install -r road-board/requirements.txt
           python -m pip install -r aurora/server/browser_testing/requirements-ci.txt
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
       - name: Start the road board without agent credentials
         working-directory: road-board
