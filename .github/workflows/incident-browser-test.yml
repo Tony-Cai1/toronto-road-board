@@ -15,7 +15,10 @@ jobs:
     if: >-
       github.event.pull_request.head.repo.full_name == github.repository &&
       startsWith(github.head_ref, 'demo/')
-    runs-on: ubuntu-latest
+    # A standard GitHub-hosted image; every job starts on a fresh VM.
+    # Pin 24.04 because the Aurora runner's Playwright 1.55 browser build does
+    # not support the Ubuntu 26.04 image currently behind ubuntu-latest.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
 
     steps:
